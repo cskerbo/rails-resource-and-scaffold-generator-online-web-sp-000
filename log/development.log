@@ -181,3 +181,22 @@ Redirected to http://165.227.60.187:49313/articles/1
 Completed 302 Found in 17ms (ActiveRecord: 5.6ms)
 
 
+Started GET "/articles/1" for 73.140.242.122 at 2020-01-13 18:58:49 +0000
+Cannot render console from 73.140.242.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 73.140.242.122 at 2020-01-13 18:58:52 +0000
+Cannot render console from 73.140.242.122! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms)
+
+
